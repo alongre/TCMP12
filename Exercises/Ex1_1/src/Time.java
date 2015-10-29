@@ -1,7 +1,4 @@
 import java.time.LocalDateTime;
-import java.util.Date;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 
 public class Time {
 	
@@ -98,8 +95,20 @@ public class Time {
 	@Override
 	public String toString() 
 	{
-		Date date = new Date(0,0,0, hour, min, sec);
-		DateFormat timeFormat = new SimpleDateFormat("HH:mm:ss");
-		return timeFormat.format(date);
+		StringBuilder sb = new StringBuilder();
+		sb.append(hour).append(":");
+		if (min<10)
+		{
+			sb.append(0).append(String.valueOf(min)).append(":");
+		}
+		else
+			sb.append(min).append(":");
+		if (sec<10)
+		{
+			sb.append(0).append(String.valueOf(sec));
+		}
+		else
+			sb.append(sec);
+		return sb.toString();
 	}
 }
