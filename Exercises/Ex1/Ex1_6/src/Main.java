@@ -7,6 +7,7 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Please enter the size of the polygon:");
 		int polygonSize = sc.nextInt();
+		
 		for (int i=0;i<polygonSize;i++)
 		{
 			System.out.println("Please enter point number: " + (i+1));
@@ -16,6 +17,8 @@ public class Main {
 			System.out.println("y value:");
 			int tmpY = sc.nextInt();
 		}
+		sc.close();
+	
 	}
 
 }
