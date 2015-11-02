@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.awt.Point;
 public class Main {
 
 	public static void main(String[] args) {
@@ -7,18 +8,18 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Please enter the size of the polygon:");
 		int polygonSize = sc.nextInt();
-		
+		Polygon polygon = new Polygon(polygonSize);
+		int x,y;
 		for (int i=0;i<polygonSize;i++)
 		{
 			System.out.println("Please enter point number: " + (i+1));
-			System.out.println("x value:");
+			System.out.println("Enter (x,y) point:");
 			sc.nextLine();
-			int tmpX = sc.nextInt();
-			System.out.println("y value:");
-			int tmpY = sc.nextInt();
+			polygon.add(new Point(sc.nextInt(),sc.nextInt()));
 		}
 		sc.close();
-	
+		System.out.println("Polygon Size: " + polygon.length());
+		System.out.println(polygon.toString());
 	}
 
 }
