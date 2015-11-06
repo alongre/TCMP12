@@ -1,41 +1,10 @@
-import java.awt.Point;
+import java.awt.Color;
 
 public class Rectangle extends Shape {
 
-	private int x = 0;
-	private int y = 0;
 	private int height = 0;
 	private int width = 0;
 	
-	
-	/**
-	 * @return the x
-	 */
-	public int getX() {
-		return x;
-	}
-
-	/**
-	 * @param the x to set
-	 */
-	public void setX(int x) {
-		this.x = x;
-	}
-
-	/**
-	 * @return the y
-	 */
-	public int getY() {
-		return y;
-	}
-
-	/**
-	 * @param y the y to set
-	 */
-	public void setY(int y) {
-		this.y = y;
-	}
-
 	/**
 	 * @return the height
 	 */
@@ -65,115 +34,97 @@ public class Rectangle extends Shape {
 	}
 
 	/**
-	 * @param x
-	 * @param y
+	 
 	 * @param length
 	 * @param width
 	 */
-	public Rectangle(int x, int y, int height, int width) {
-		this.x = x;
-		this.y = y;
+	public Rectangle(Point point,Color color,boolean fill,String name,int height, int width) {
+		super(point,color, fill, name);
 		this.height = height;
 		this.width = width;
 	}
-	
+	public Rectangle(String name)
+	{
+		super(name);
+	}
 	
 	/**
 	 * @param length
 	 * @param width
 	 */
-	public Rectangle(int height, int width) {
+	public Rectangle(int height, int width,String name) {
+		super(new Point(0,0),Color.red, false, name);
 		this.height = height;
 		this.width = width;
 	}
 	
-	
-	
-	public int area()
+	public void resize(int w,int h)
 	{
-		return height * width;
+		width = w;
+		height = h;
 	}
 	
-	public int perimeter()
+	public Rectangle Union(Rectangle r)
 	{
-		return height*2 +  width*2;
+		if (r == null) return this;
+		int xLeft = (int) Math.min(position.getX(), r.position.getX());
+		int yBottom = (int) Math.min(position.getY(), r.position.getY());
+		int xRight = (int) Math.max(position.getX() + this.width, r.position.getX() + r.width);
+		int yTop = (int) Math.max(position.getY() + height, r.position.getY() + r.height);
+		return new Rectangle(new Point(xLeft,yBottom),color,fill,"Union", yTop - yBottom,xRight - xLeft);
 	}
+	public boolean isIntersect(Rectangle r)
+	{
+		double x = position.getX();
+		double y = position.getY();
+		double rx = r.position.getX();
+		double ry = r.position.getY();
+		if (x+width < rx || rx+r.width < x || y+height < ry || ry+r.height<y)
+			return false;
+		return true;
+		
+	}
+
+	
+	@Override
+	public String toString() {
+		return "Rectangle [x=" + position.getX() + ", y=" + position.getY() + ", height=" + height + ", width=" + width + "]";
+	}
+
+	@Override
+	public void draw() {
+		System.out.println("Drawing a rectangle");
+		
+	}
+
+
+	
+	@Override
+	public boolean isEqual(IShape shape)
+	{
+		Rectangle rect = (Rectangle) shape;
+		if (this.area() == rect.area()) return true;
+		return false;
+	}
+	
+	@Override
 	public void resize(int percent)
 	{
 		double p = percent * 1.0 / 100;
 		height*= p;
 		width*= p;
 	}
-	public void resize(int w,int h)
-	{
-		width = w;
-		height = h;
-	}
-
-	public boolean isEqual(Rectangle r)
-	{
-		if (this.area() == r.area()) return true;
-		return false;
-	}
-	public void move(int x,int y)
-	{
-		this.x = x;
-		this.y = y;
-	}
-	public void move(Point p)
-	{
-		if (p==null) return;
-		this.x = p.x;
-		this.y = p.y;
-	}
-	
-	public Rectangle Union(Rectangle r)
-	{
-		if (r == null) return this;
-		int xLeft = Math.min(this.x, r.x);
-		int yBottom = Math.min(this.y, r.y);
-		int xRight = Math.max(this.x + this.width, r.x + r.width);
-		int yTop = Math.max(this.y + height, r.y + r.height);
-		return new Rectangle(xLeft,yBottom,yTop - yBottom,xRight - xLeft);
-	}
-	public boolean isIntersect(Rectangle r)
-	{
-		if (x+width < r.x || r.x+r.width < x || y+height < r.y || r.y+r.height<y)
-			return false;
-		return true;
-		
-	}
-
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 */
 	@Override
-	public String toString() {
-		return "Rectangle [x=" + x + ", y=" + y + ", height=" + height + ", width=" + width + "]";
+	public double area()
+	{
+		return height * width;
+	}
+	@Override
+	public double perimeter()
+	{
+		return height*2 +  width*2;
 	}
 
-	@Override
-	public void draw() {
-		// TODO Auto-generated method stub
-		
-	}
 
-	@Override
-	public void resize() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void move() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void remove() {
-		// TODO Auto-generated method stub
-		
-	}
 	
 }

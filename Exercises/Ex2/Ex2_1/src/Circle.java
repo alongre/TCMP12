@@ -4,34 +4,68 @@ public class Circle extends Shape {
 
 	private double radius;
 	
-	public Circle()
+	/**
+	 * @return the radius
+	 */
+	public double getRadius() {
+		return radius;
+	}
+
+	/**
+	 * @param radius the radius to set
+	 */
+	public void setRadius(double radius) {
+		this.radius = radius;
+	}
+
+	public Circle(String name)
 	{
-		super();
+		super(name);
 		radius = 5;
 	}
+
 	
+	public Circle(Point position, Color color, boolean fill,String name)
+	{
+		super(position,color , fill, name);
+	}
 	
 	@Override
 	public void draw() {
-		
-		
-	}
-
-	@Override
-	public void resize() {
+		System.out.println("Drawing a circle");
 		
 	}
 
 	@Override
-	public void move() {
-		// TODO Auto-generated method stub
+	public void resize(int percent) {
+		radius *= percent/100;
 		
+	}
+
+	
+
+	@Override
+	public boolean isEqual(IShape shape) {
+		Circle circle = (Circle)shape;
+		if (this.radius != circle.radius) return false;
+		if (this.perimeter() != circle.perimeter()) return false;
+		if (this.area() != circle.area()) return false;
+		return true;
 	}
 
 	@Override
-	public void remove() {
-		// TODO Auto-generated method stub
-		
+	public double area() {
+		return Math.PI * Math.pow(radius, 2);
+
 	}
 
+	@Override
+	public double perimeter() {
+		
+		return 2*Math.PI*radius;
+	}
+	
+	
+	
+	
 }
