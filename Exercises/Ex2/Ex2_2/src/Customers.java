@@ -13,4 +13,8 @@ public class Customers {
 			System.out.println("*********************");
 		}
 	}
+	public int count()
+	{
+		return customerList.length;
+	}
 }
