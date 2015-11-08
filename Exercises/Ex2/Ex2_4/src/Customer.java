@@ -75,6 +75,20 @@ public class Customer {
 	{
 		System.out.println(toString());
 	}
+	
+	
+	/* (non-Javadoc)
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		Customer customer = (Customer)obj;
+		if (customer!=null)
+		{
+			if (this.id.compareTo(customer.id)==0) return true;
+		}
+		return false;
+	}
 	@Override
 	public String toString()
 	{
