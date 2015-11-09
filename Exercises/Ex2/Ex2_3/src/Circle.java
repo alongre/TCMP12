@@ -44,18 +44,6 @@ public class Circle extends Shape {
 		
 		
 	}
-
-	
-
-	@Override
-	public boolean isEqual(IShape shape) {
-		Circle circle = (Circle)shape;
-		if (this.radius != circle.radius) return false;
-		if (this.perimeter() != circle.perimeter()) return false;
-		if (this.area() != circle.area()) return false;
-		return true;
-	}
-
 	@Override
 	public double area() {
 		return Math.PI * Math.pow(radius, 2);

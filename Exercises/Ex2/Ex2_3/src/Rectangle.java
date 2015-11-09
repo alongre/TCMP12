@@ -96,17 +96,6 @@ public class Rectangle extends Shape {
 		System.out.println("Drawing a rectangle");
 		
 	}
-
-
-	
-	@Override
-	public boolean isEqual(IShape shape)
-	{
-		Rectangle rect = (Rectangle) shape;
-		if (this.area() == rect.area()) return true;
-		return false;
-	}
-	
 	@Override
 	public void resize(int percent)
 	{

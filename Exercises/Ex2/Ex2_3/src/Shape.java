@@ -97,8 +97,14 @@ public abstract class Shape implements IShape
 	{
 		System.out.println("Resizing " + this.name + " by " + percent + "%");
 	}
-	public abstract boolean isEqual(IShape shape);
 	public abstract double area();
 	public abstract double perimeter();
+	@Override
+	public boolean equals(Object obj)
+	{
+		Shape shape = (Shape) obj;
+		if (this.name.compareTo(shape.getName())==0 &&  shape.area() == shape.area()) return true;
+		return false;
+	}
 	
 }

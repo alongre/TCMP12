@@ -6,7 +6,6 @@ public interface IShape {
 	void resize(int percent);
 	void move(Point p);
 	void remove();
-	boolean isEqual(IShape shape);
 	void move(int x,int y);
 	double area();
 	double perimeter();

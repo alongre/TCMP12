@@ -44,21 +44,6 @@ public class Line extends Shape {
 		
 
 	}
-
-	@Override
-	public boolean isEqual(IShape shape) {
-		Line line = (Line)shape;
-		if (this.position.getX() == line.position.getX() &&
-			this.position.getY() == line.position.getY() &&
-			this.endPoint.getX() == line.endPoint.getX() &&
-			this.endPoint.getY() == line.endPoint.getY())
-		{
-			return true;
-		}
-			
-		return false;
-	}
-
 	@Override
 	public double area() {
 		return 0;

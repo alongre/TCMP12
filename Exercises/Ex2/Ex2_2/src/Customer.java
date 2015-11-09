@@ -2,7 +2,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class Customer {
+public abstract class Customer {
 	protected String name;
 	protected String address;
 	protected Date registerDate;

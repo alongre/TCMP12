@@ -8,7 +8,7 @@ public class Main {
 		Calendar cal = Calendar.getInstance();
 		cal.set(2015,Calendar.JULY, 29);
 		Customer [] customers = new Customer[3];
-		customers[0] = new Customer("Alon","Shaked st");
+		customers[0] = new VipCustomer("Alon","Shaked st",20);
 		customers[0].addToPayment(100);
 		customers[1] = new RegCustomer("Roy","Shaked st",cal.getTime());
 		customers[1].addToPayment(500);
