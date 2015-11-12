@@ -1,11 +1,11 @@
 import java.awt.Color;
 
-public abstract class Shape implements Moveable,GeometricableObject
+public abstract class Shape implements Moveable
 {
 	protected Point position;
 	protected Color color;
 	protected boolean fill;
-	protected String name;
+
 	/**
 	 * @param c the c to set
 	 */
@@ -44,19 +44,7 @@ public abstract class Shape implements Moveable,GeometricableObject
 	public Color getColor() {
 		return color;
 	}
-	
-	/**
-	 * @return the name
-	 */
-	public String getName() {
-		return name;
-	}
-	/**
-	 * @param name the name to set
-	 */
-	public void setName(String name) {
-		this.name = name;
-	}
+
 	/**
 	 * @param position
 	 * @param c
@@ -66,7 +54,6 @@ public abstract class Shape implements Moveable,GeometricableObject
 		this.position = position;
 		this.color = c;
 		this.fill = fill;
-		this.name = name;
 	}
 	/**
 	 * 
@@ -75,7 +62,6 @@ public abstract class Shape implements Moveable,GeometricableObject
 		this.position = new Point(0,0);
 		this.color = Color.blue;
 		fill = false;
-		this.name = name;
 	}
 
 
@@ -89,24 +75,16 @@ public abstract class Shape implements Moveable,GeometricableObject
 		position.setY(y);
 		
 	}
-	public final void remove()
-	{
-		System.out.println(name + " was removed from the drawing");
-	}
+	public abstract void remove();
 	
 	public abstract void draw();
-	public void resize(int percent)
-	{
-		System.out.println("Resizing " + this.name + " by " + percent + "%");
-	}
-	public abstract double area();
-	public abstract double perimeter();
+	public abstract void resize(int percent);
 	@Override
-	public boolean equals(Object obj)
-	{
-		Shape shape = (Shape) obj;
-		if (this.name.compareTo(shape.getName())==0 &&  shape.area() == shape.area()) return true;
-		return false;
-	}
-	
+	public abstract boolean equals(Object obj);
+//	{
+//		Shape shape = (Shape) obj;
+//		if (this.name.compareTo(shape.getName())==0 &&  shape.area() == shape.area()) return true;
+//		return false;
+//	}
+//
 }

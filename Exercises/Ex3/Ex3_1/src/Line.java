@@ -44,16 +44,14 @@ public class Line extends Shape {
 		
 
 	}
-	@Override
-	public double area() {
-		return 0;
-	}
 
 	@Override
-	public double perimeter() {
-		// TODO Auto-generated method stub
-		return 0;
+	public boolean equals(Object obj) {
+		Line l = (Line) obj;
+		if (this.name.compareTo(l.getName())==0 &&  this.position == l.position && this.endPoint == l.endPoint) return true;
+		return false;
 	}
+
 
 
 	@Override

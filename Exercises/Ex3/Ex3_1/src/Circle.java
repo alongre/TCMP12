@@ -1,6 +1,6 @@
 import java.awt.Color;
 
-public class Circle extends Shape {
+public class Circle extends Shape implements GeometricableObject {
 
 	private double radius;
 	
@@ -30,7 +30,13 @@ public class Circle extends Shape {
 		super(position,color , fill, name);
 		this.radius = radius;
 	}
-	
+
+	@Override
+	public void remove() {
+
+			System.out.println("Circle was removed from the drawing");
+	}
+
 	@Override
 	public void draw() {
 		System.out.println("Drawing a circle with radius: " + radius);
@@ -39,11 +45,21 @@ public class Circle extends Shape {
 
 	@Override
 	public void resize(int percent) {
-		super.resize(percent);
 		radius *= percent * 1.0/100;
 		
 		
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof Circle) {
+			Circle c = (Circle) obj;
+			if (this.area() == c.area() && this.perimeter() == c.perimeter())
+				return true;
+		}
+		return false;
+	}
+
 	@Override
 	public double area() {
 		return Math.PI * Math.pow(radius, 2);
@@ -59,21 +75,21 @@ public class Circle extends Shape {
 
 	@Override
 	public void moveUp() {
-		System.out.println("Moving " + this.name + " up");
+		System.out.println("Moving the circle up");
 	}
 
 	@Override
 	public void moveDown() {
-		System.out.println("Moving " + this.name + " down");
+		System.out.println("Moving the circle down");
 	}
 
 	@Override
 	public void moveLeft() {
-		System.out.println("Moving " + this.name + " left");
+		System.out.println("Moving the circle left");
 	}
 
 	@Override
 	public void moveRight() {
-		System.out.println("Moving " + this.name + " right");
+		System.out.println("Moving the circle right");
 	}
 }

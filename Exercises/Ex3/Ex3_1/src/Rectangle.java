@@ -1,6 +1,6 @@
 import java.awt.Color;
 
-public class Rectangle extends Shape {
+public class Rectangle extends Shape implements GeometricableObject {
 
 	private int height = 0;
 	private int width = 0;
@@ -47,7 +47,12 @@ public class Rectangle extends Shape {
 	{
 		super(name);
 	}
-	
+
+	@Override
+	public void remove() {
+
+	}
+
 	/**
 	 * @param length
 	 * @param width
@@ -104,6 +109,17 @@ public class Rectangle extends Shape {
 		height*= p;
 		width*= p;
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof Rectangle) {
+			Rectangle r = (Rectangle) obj;
+			if (this.name.compareTo(r.getName()) == 0 && this.area() == r.area() && this.perimeter() == r.perimeter())
+				return true;
+		}
+		return false;
+	}
+
 	@Override
 	public double area()
 	{

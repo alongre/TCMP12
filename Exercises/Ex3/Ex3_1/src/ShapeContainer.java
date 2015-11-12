@@ -21,6 +21,16 @@ public class ShapeContainer {
 		 }
 		 return false;
 	 }
+	public boolean add( GeometricableObject geometricableObject)
+	{
+		Shape shape = (Shape)geometricableObject;
+		if (index<shapesList.length && index>=0 && !contains(shape))
+		{
+			shapesList[index++] = shape;
+			return true;
+		}
+		return false;
+	}
 	 private boolean contains(Shape shape)
 	 {
 		 for(Shape s:shapesList)
@@ -99,6 +109,28 @@ public class ShapeContainer {
 			 shape.resize(percent);
 		 }
 	 }
+	public void move(direction moveTo)
+	{
+		for(Shape shape:shapesList) {
+			if (shape==null) return;
+			switch (moveTo) {
+				case Left:
+					shape.moveLeft();
+					break;
+				case Right:
+					shape.moveRight();
+					break;
+				case Up:
+					shape.moveUp();
+					break;
+				case Down:
+					shape.moveDown();
+					break;
+				default:
+			}
+
+		}
+	}
 	 @Override
 	 public String toString()
 	 {
@@ -106,12 +138,31 @@ public class ShapeContainer {
 		 for(Shape shape:shapesList)
 		 {
 			 if (shape==null) break;
-			 sb.append("\nShape name: " + shape.getName());
 			 sb.append("\nShape color: " + shape.getColor());
-			 sb.append("\nArea is: " + shape.area());
-			 sb.append("\nPerimeter is: " + shape.perimeter());
+			 if (shape instanceof  GeometricableObject)
+			 {
+				 GeometricableObject gShape = (GeometricableObject)shape;
+				 sb.append("\nArea is: " + gShape.area());
+				 sb.append("\nPerimeter is: " + gShape.perimeter());
+			 }
 			 sb.append("\n----------------------------");
 		 }
 		 return sb.toString();
 	 }
+
+	public double areaOfAll(GeometricableObject[] geometricableObjects)
+	{
+		double totalArea = 0;
+		for (GeometricableObject go:geometricableObjects) {
+			totalArea += go.area();
+		}
+		return totalArea;
+	}
 }
+enum direction
+{
+	Left,
+	Right,
+	Up,
+	Down
+};
