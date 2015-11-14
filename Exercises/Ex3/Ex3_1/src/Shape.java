@@ -81,10 +81,5 @@ public abstract class Shape implements Moveable
 	public abstract void resize(int percent);
 	@Override
 	public abstract boolean equals(Object obj);
-//	{
-//		Shape shape = (Shape) obj;
-//		if (this.name.compareTo(shape.getName())==0 &&  shape.area() == shape.area()) return true;
-//		return false;
-//	}
-//
+
 }

@@ -30,16 +30,22 @@ public class Line extends Shape {
 		double endY = endPoint.getY();
 		return Math.sqrt(Math.pow((endX - startX),2) + Math.pow((endY-startY),2));
 	}
-	
+
+	@Override
+	public void remove() {
+
+		System.out.println("Circle was removed from the drawing");
+	}
+
 	@Override
 	public void draw() {
-		System.out.println("Drawing Line " + this.name);
+		System.out.println("Drawing Line");
 
 	}
 
 	@Override
 	public void resize(int percent) {
-		super.resize(percent);
+		System.out.println("Resizing the Line by " + percent + "%");
 		
 		
 
@@ -48,7 +54,7 @@ public class Line extends Shape {
 	@Override
 	public boolean equals(Object obj) {
 		Line l = (Line) obj;
-		if (this.name.compareTo(l.getName())==0 &&  this.position == l.position && this.endPoint == l.endPoint) return true;
+		if (this.position == l.position && this.endPoint == l.endPoint) return true;
 		return false;
 	}
 
@@ -56,21 +62,21 @@ public class Line extends Shape {
 
 	@Override
 	public void moveUp() {
-		System.out.println("Moving " + this.name + " up");
+		System.out.println("Moving the line up");
 	}
 
 	@Override
 	public void moveDown() {
-		System.out.println("Moving " + this.name + " down");
+		System.out.println("Moving the line down");
 	}
 
 	@Override
 	public void moveLeft() {
-		System.out.println("Moving " + this.name + " left");
+		System.out.println("Moving the line left");
 	}
 
 	@Override
 	public void moveRight() {
-		System.out.println("Moving " + this.name + " right");
+		System.out.println("Moving the line right");
 	}
 }

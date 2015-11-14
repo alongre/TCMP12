@@ -104,7 +104,6 @@ public class Rectangle extends Shape implements GeometricableObject {
 	@Override
 	public void resize(int percent)
 	{
-		super.resize(percent);
 		double p = percent * 1.0 / 100;
 		height*= p;
 		width*= p;
@@ -114,7 +113,7 @@ public class Rectangle extends Shape implements GeometricableObject {
 	public boolean equals(Object obj) {
 		if (obj instanceof Rectangle) {
 			Rectangle r = (Rectangle) obj;
-			if (this.name.compareTo(r.getName()) == 0 && this.area() == r.area() && this.perimeter() == r.perimeter())
+			if (this.area() == r.area() && this.perimeter() == r.perimeter())
 				return true;
 		}
 		return false;
@@ -134,21 +133,21 @@ public class Rectangle extends Shape implements GeometricableObject {
 
 	@Override
 	public void moveUp() {
-		System.out.println("Moving " + this.name + " up");
+		System.out.println("Moving the rectangle up");
 	}
 
 	@Override
 	public void moveDown() {
-		System.out.println("Moving " + this.name + " down");
+		System.out.println("Moving the rectangle down");
 	}
 
 	@Override
 	public void moveLeft() {
-		System.out.println("Moving " + this.name + " left");
+		System.out.println("Moving the rectangle left");
 	}
 
 	@Override
 	public void moveRight() {
-		System.out.println("Moving " + this.name + " right");
+		System.out.println("Moving the rectangle right");
 	}
 }

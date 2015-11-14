@@ -159,6 +159,7 @@ public class ShapeContainer {
 		return totalArea;
 	}
 }
+
 enum direction
 {
 	Left,
