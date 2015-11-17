@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efb81b19-7d63-4058-b7e2-fe4e3faade64" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Line.java" afterPath="$PROJECT_DIR$/src/Line.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rectangle.java" afterPath="$PROJECT_DIR$/src/Rectangle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Shape.java" afterPath="$PROJECT_DIR$/src/Shape.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShapeContainer.java" afterPath="$PROJECT_DIR$/src/ShapeContainer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-    </list>
+    <list default="true" id="efb81b19-7d63-4058-b7e2-fe4e3faade64" name="Default" comment="" />
     <ignored path="Ex3_1.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,12 +21,12 @@
     <favorites_list name="Ex3_1" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="ShapeContainer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ShapeContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46348733">
-              <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.52099884">
+              <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
               <folding>
                 <element signature="method#ShapeContainer#0;class#ShapeContainer#0" expanded="false" />
                 <element signature="method#add#0;class#ShapeContainer#0" expanded="false" />
@@ -57,11 +51,12 @@
         <entry file="file://$PROJECT_DIR$/src/Rectangle.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
               <folding>
                 <element signature="docComment;method#getHeight#0;class#Rectangle#0" expanded="false" />
                 <element signature="docComment;method#setHeight#0;class#Rectangle#0" expanded="false" />
                 <element signature="docComment;method#getWidth#0;class#Rectangle#0" expanded="false" />
+                <element signature="e#405#406#0" expanded="true" />
                 <element signature="docComment;method#setWidth#0;class#Rectangle#0" expanded="false" />
                 <element signature="docComment;method#Rectangle#0;class#Rectangle#0" expanded="false" />
                 <element signature="method#Rectangle#0;class#Rectangle#0" expanded="false" />
@@ -73,7 +68,6 @@
                 <element signature="method#toString#0;class#Rectangle#0" expanded="false" />
                 <element signature="method#draw#0;class#Rectangle#0" expanded="false" />
                 <element signature="method#resize#1;class#Rectangle#0" expanded="false" />
-                <element signature="method#equals#0;class#Rectangle#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -83,15 +77,12 @@
         <entry file="file://$PROJECT_DIR$/src/Line.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
               <folding>
+                <element signature="e#366#367#0" expanded="false" />
                 <element signature="method#Line#0;class#Line#0" expanded="false" />
                 <element signature="method#Line#1;class#Line#0" expanded="false" />
-                <element signature="method#length#0;class#Line#0" expanded="false" />
-                <element signature="method#remove#0;class#Line#0" expanded="false" />
-                <element signature="method#draw#0;class#Line#0" expanded="false" />
-                <element signature="method#resize#0;class#Line#0" expanded="false" />
-                <element signature="method#equals#0;class#Line#0" expanded="false" />
+                <element signature="e#1546#1547#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -111,14 +102,13 @@
         <entry file="file://$PROJECT_DIR$/src/Shape.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding>
                 <element signature="docComment;method#getPosition#0;class#Shape#0" expanded="false" />
-                <element signature="docComment;method#setPosition#0;class#Shape#0" expanded="false" />
+                <element signature="docComment;method#getPosition#0;class#Shape#0" expanded="false" />
                 <element signature="docComment;method#Shape#1;class#Shape#0" expanded="false" />
                 <element signature="method#Shape#1;class#Shape#0" expanded="false" />
                 <element signature="e#1072#1073#0" expanded="true" />
-                <element signature="e#1091#1092#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -180,13 +170,11 @@
   <component name="MavenProjectNavigator">
     <treeState />
   </component>
-  <component name="NamedScopeManager">
-    <order />
-  </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="817" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -209,10 +197,12 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -233,7 +223,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -279,6 +269,15 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -300,6 +299,15 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -413,32 +421,32 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="817" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32904148" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32904148" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32904148" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17811158" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.101573676" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39977974" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904148" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17803837" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10127932" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904148" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904148" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39977974" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -462,7 +470,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ShapeContainer.java</url>
-          <line>163</line>
+          <line>164</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -476,6 +484,101 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ShapeContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#ShapeContainer#0;class#ShapeContainer#0" expanded="false" />
+            <element signature="method#add#0;class#ShapeContainer#0" expanded="false" />
+            <element signature="method#add#1;class#ShapeContainer#0" expanded="false" />
+            <element signature="method#contains#0;class#ShapeContainer#0" expanded="false" />
+            <element signature="method#drawAll#0;class#ShapeContainer#0" expanded="false" />
+            <element signature="method#remove#0;class#ShapeContainer#0" expanded="false" />
+            <element signature="method#remove#1;class#ShapeContainer#0" expanded="false" />
+            <element signature="method#getIndex#0;class#ShapeContainer#0" expanded="false" />
+            <element signature="method#removeAll#0;class#ShapeContainer#0" expanded="false" />
+            <element signature="method#resizeAll#0;class#ShapeContainer#0" expanded="false" />
+            <element signature="method#move#0;class#ShapeContainer#0" expanded="false" />
+            <element signature="method#toString#0;class#ShapeContainer#0" expanded="false" />
+            <element signature="method#areaOfAll#0;class#ShapeContainer#0" expanded="false" />
+            <element signature="class#direction#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="docComment;method#getHeight#0;class#Rectangle#0" expanded="false" />
+            <element signature="docComment;method#setHeight#0;class#Rectangle#0" expanded="false" />
+            <element signature="docComment;method#getWidth#0;class#Rectangle#0" expanded="false" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="docComment;method#setWidth#0;class#Rectangle#0" expanded="false" />
+            <element signature="docComment;method#Rectangle#0;class#Rectangle#0" expanded="false" />
+            <element signature="method#Rectangle#0;class#Rectangle#0" expanded="false" />
+            <element signature="docComment;method#Rectangle#2;class#Rectangle#0" expanded="false" />
+            <element signature="method#Rectangle#2;class#Rectangle#0" expanded="false" />
+            <element signature="method#resize#0;class#Rectangle#0" expanded="false" />
+            <element signature="method#Union#0;class#Rectangle#0" expanded="false" />
+            <element signature="method#isIntersect#0;class#Rectangle#0" expanded="false" />
+            <element signature="method#toString#0;class#Rectangle#0" expanded="false" />
+            <element signature="method#draw#0;class#Rectangle#0" expanded="false" />
+            <element signature="method#resize#1;class#Rectangle#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Line.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding>
+            <element signature="e#366#367#0" expanded="false" />
+            <element signature="method#Line#0;class#Line#0" expanded="false" />
+            <element signature="method#Line#1;class#Line#0" expanded="false" />
+            <element signature="e#1546#1547#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;method#getPosition#0;class#Shape#0" expanded="false" />
+            <element signature="docComment;method#getPosition#0;class#Shape#0" expanded="false" />
+            <element signature="docComment;method#Shape#1;class#Shape#0" expanded="false" />
+            <element signature="method#Shape#1;class#Shape#0" expanded="false" />
+            <element signature="e#1072#1073#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Circle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+          <folding>
+            <element signature="docComment;method#getRadius#0;class#Circle#0" expanded="false" />
+            <element signature="docComment;method#setRadius#0;class#Circle#0" expanded="false" />
+            <element signature="e#1523#1524#0" expanded="true" />
+            <element signature="e#1575#1576#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ShapeContainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -507,6 +610,7 @@
             <element signature="docComment;method#getHeight#0;class#Rectangle#0" expanded="false" />
             <element signature="docComment;method#setHeight#0;class#Rectangle#0" expanded="false" />
             <element signature="docComment;method#getWidth#0;class#Rectangle#0" expanded="false" />
+            <element signature="e#405#406#0" expanded="true" />
             <element signature="docComment;method#setWidth#0;class#Rectangle#0" expanded="false" />
             <element signature="docComment;method#Rectangle#0;class#Rectangle#0" expanded="false" />
             <element signature="method#Rectangle#0;class#Rectangle#0" expanded="false" />
@@ -518,7 +622,6 @@
             <element signature="method#toString#0;class#Rectangle#0" expanded="false" />
             <element signature="method#draw#0;class#Rectangle#0" expanded="false" />
             <element signature="method#resize#1;class#Rectangle#0" expanded="false" />
-            <element signature="method#equals#0;class#Rectangle#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -529,11 +632,10 @@
           <caret line="77" column="34" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
           <folding>
             <element signature="docComment;method#getPosition#0;class#Shape#0" expanded="false" />
-            <element signature="docComment;method#setPosition#0;class#Shape#0" expanded="false" />
+            <element signature="docComment;method#getPosition#0;class#Shape#0" expanded="false" />
             <element signature="docComment;method#Shape#1;class#Shape#0" expanded="false" />
             <element signature="method#Shape#1;class#Shape#0" expanded="false" />
             <element signature="e#1072#1073#0" expanded="true" />
-            <element signature="e#1091#1092#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -579,11 +681,10 @@
           <caret line="107" column="21" selection-start-line="105" selection-start-column="8" selection-end-line="107" selection-end-column="21" />
           <folding>
             <element signature="docComment;method#getPosition#0;class#Shape#0" expanded="false" />
-            <element signature="docComment;method#setPosition#0;class#Shape#0" expanded="false" />
+            <element signature="docComment;method#getPosition#0;class#Shape#0" expanded="false" />
             <element signature="docComment;method#Shape#1;class#Shape#0" expanded="false" />
             <element signature="method#Shape#1;class#Shape#0" expanded="false" />
             <element signature="e#1072#1073#0" expanded="true" />
-            <element signature="e#1091#1092#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -609,6 +710,7 @@
             <element signature="docComment;method#getHeight#0;class#Rectangle#0" expanded="false" />
             <element signature="docComment;method#setHeight#0;class#Rectangle#0" expanded="false" />
             <element signature="docComment;method#getWidth#0;class#Rectangle#0" expanded="false" />
+            <element signature="e#405#406#0" expanded="true" />
             <element signature="docComment;method#setWidth#0;class#Rectangle#0" expanded="false" />
             <element signature="docComment;method#Rectangle#0;class#Rectangle#0" expanded="false" />
             <element signature="method#Rectangle#0;class#Rectangle#0" expanded="false" />
@@ -620,7 +722,6 @@
             <element signature="method#toString#0;class#Rectangle#0" expanded="false" />
             <element signature="method#draw#0;class#Rectangle#0" expanded="false" />
             <element signature="method#resize#1;class#Rectangle#0" expanded="false" />
-            <element signature="method#equals#0;class#Rectangle#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -630,13 +731,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding>
+            <element signature="e#366#367#0" expanded="false" />
             <element signature="method#Line#0;class#Line#0" expanded="false" />
             <element signature="method#Line#1;class#Line#0" expanded="false" />
-            <element signature="method#length#0;class#Line#0" expanded="false" />
-            <element signature="method#remove#0;class#Line#0" expanded="false" />
-            <element signature="method#draw#0;class#Line#0" expanded="false" />
-            <element signature="method#resize#0;class#Line#0" expanded="false" />
-            <element signature="method#equals#0;class#Line#0" expanded="false" />
+            <element signature="e#1546#1547#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -692,11 +790,10 @@
           <caret line="107" column="21" selection-start-line="105" selection-start-column="8" selection-end-line="107" selection-end-column="21" />
           <folding>
             <element signature="docComment;method#getPosition#0;class#Shape#0" expanded="false" />
-            <element signature="docComment;method#setPosition#0;class#Shape#0" expanded="false" />
+            <element signature="docComment;method#getPosition#0;class#Shape#0" expanded="false" />
             <element signature="docComment;method#Shape#1;class#Shape#0" expanded="false" />
             <element signature="method#Shape#1;class#Shape#0" expanded="false" />
             <element signature="e#1072#1073#0" expanded="true" />
-            <element signature="e#1091#1092#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -722,6 +819,7 @@
             <element signature="docComment;method#getHeight#0;class#Rectangle#0" expanded="false" />
             <element signature="docComment;method#setHeight#0;class#Rectangle#0" expanded="false" />
             <element signature="docComment;method#getWidth#0;class#Rectangle#0" expanded="false" />
+            <element signature="e#405#406#0" expanded="true" />
             <element signature="docComment;method#setWidth#0;class#Rectangle#0" expanded="false" />
             <element signature="docComment;method#Rectangle#0;class#Rectangle#0" expanded="false" />
             <element signature="method#Rectangle#0;class#Rectangle#0" expanded="false" />
@@ -733,7 +831,6 @@
             <element signature="method#toString#0;class#Rectangle#0" expanded="false" />
             <element signature="method#draw#0;class#Rectangle#0" expanded="false" />
             <element signature="method#resize#1;class#Rectangle#0" expanded="false" />
-            <element signature="method#equals#0;class#Rectangle#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -743,13 +840,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding>
+            <element signature="e#366#367#0" expanded="false" />
             <element signature="method#Line#0;class#Line#0" expanded="false" />
             <element signature="method#Line#1;class#Line#0" expanded="false" />
-            <element signature="method#length#0;class#Line#0" expanded="false" />
-            <element signature="method#remove#0;class#Line#0" expanded="false" />
-            <element signature="method#draw#0;class#Line#0" expanded="false" />
-            <element signature="method#resize#0;class#Line#0" expanded="false" />
-            <element signature="method#equals#0;class#Line#0" expanded="false" />
+            <element signature="e#1546#1547#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -815,11 +909,12 @@
     <entry file="file://$PROJECT_DIR$/src/Rectangle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
           <folding>
             <element signature="docComment;method#getHeight#0;class#Rectangle#0" expanded="false" />
             <element signature="docComment;method#setHeight#0;class#Rectangle#0" expanded="false" />
             <element signature="docComment;method#getWidth#0;class#Rectangle#0" expanded="false" />
+            <element signature="e#405#406#0" expanded="true" />
             <element signature="docComment;method#setWidth#0;class#Rectangle#0" expanded="false" />
             <element signature="docComment;method#Rectangle#0;class#Rectangle#0" expanded="false" />
             <element signature="method#Rectangle#0;class#Rectangle#0" expanded="false" />
@@ -831,7 +926,6 @@
             <element signature="method#toString#0;class#Rectangle#0" expanded="false" />
             <element signature="method#draw#0;class#Rectangle#0" expanded="false" />
             <element signature="method#resize#1;class#Rectangle#0" expanded="false" />
-            <element signature="method#equals#0;class#Rectangle#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -839,15 +933,12 @@
     <entry file="file://$PROJECT_DIR$/src/Line.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
           <folding>
+            <element signature="e#366#367#0" expanded="false" />
             <element signature="method#Line#0;class#Line#0" expanded="false" />
             <element signature="method#Line#1;class#Line#0" expanded="false" />
-            <element signature="method#length#0;class#Line#0" expanded="false" />
-            <element signature="method#remove#0;class#Line#0" expanded="false" />
-            <element signature="method#draw#0;class#Line#0" expanded="false" />
-            <element signature="method#resize#0;class#Line#0" expanded="false" />
-            <element signature="method#equals#0;class#Line#0" expanded="false" />
+            <element signature="e#1546#1547#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -855,22 +946,21 @@
     <entry file="file://$PROJECT_DIR$/src/Shape.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="docComment;method#getPosition#0;class#Shape#0" expanded="false" />
-            <element signature="docComment;method#setPosition#0;class#Shape#0" expanded="false" />
+            <element signature="docComment;method#getPosition#0;class#Shape#0" expanded="false" />
             <element signature="docComment;method#Shape#1;class#Shape#0" expanded="false" />
             <element signature="method#Shape#1;class#Shape#0" expanded="false" />
             <element signature="e#1072#1073#0" expanded="true" />
-            <element signature="e#1091#1092#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ShapeContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46348733">
-          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.52099884">
+          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding>
             <element signature="method#ShapeContainer#0;class#ShapeContainer#0" expanded="false" />
             <element signature="method#add#0;class#ShapeContainer#0" expanded="false" />
