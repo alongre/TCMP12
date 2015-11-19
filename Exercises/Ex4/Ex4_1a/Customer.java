@@ -90,7 +90,10 @@ public class Customer {
 		return false;
 	}
 
-
+	@Override
+	public int hashCode() {
+		return name.hashCode();
+	}
 
 	@Override
 	public String toString()

@@ -12,14 +12,17 @@ public class Main {
 		RegCustomer e = new RegCustomer("e","Haifa",calendar.getTime());
 		VipCustomer f = new VipCustomer("F","Haifa",80);
 
-		CustomerContainer customerContainer = new CustomerContainer();
-		customerContainer.add(a);
-		customerContainer.add(b);
-		customerContainer.add(c);
-		customerContainer.add(d);
-		customerContainer.add(e);
-		customerContainer.add(f);
-		customerContainer.print();
+		CustomerContainer customerContainerTreeSet = new CustomerContainer();
+		customerContainerTreeSet.add(a);
+
+		customerContainerTreeSet.add(b);
+		customerContainerTreeSet.add(c);
+		customerContainerTreeSet.add(d);
+		customerContainerTreeSet.add(e);
+		customerContainerTreeSet.add(f);
+		customerContainerTreeSet.print();
+
+
 	}
 
 }

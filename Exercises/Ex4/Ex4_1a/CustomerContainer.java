@@ -5,7 +5,7 @@ public class CustomerContainer {
 	private TreeSet<Customer> customersTreeSet;
 
 	
-	public CustomerContainer ()
+	public CustomerContainer()
 	{
 		customersTreeSet = new TreeSet<>((o1, o2) -> o1.getName().compareTo(o2.getName()));
 	}
