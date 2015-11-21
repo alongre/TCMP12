@@ -7,7 +7,7 @@ import java.util.*;
  */
 public class BookSearch {
 
-    private HashMap<Integer,LinkedList<String>> bookHash;
+    private HashMap<Integer, LinkedList<WordInfo>> bookHash;
     public String getFilePath() {
         return filePath;
     }
@@ -30,12 +30,24 @@ public class BookSearch {
         while (input.hasNext())
         {
             String word = input.next();
-            LinkedList wordList = bookHash.get(word.hashCode());
-            if (wordList == null) wordList = new LinkedList();
-            wordList.add(word);
-            bookHash.put(word.hashCode(),wordList);
+            LinkedList<WordInfo> list = bookHash.get(word.hashCode());
+            WordInfo wordInfo = new WordInfo(word,1);
+            if (list == null)
+            {
+                list = new LinkedList<>();
+                list.add(wordInfo);
+                bookHash.put(word.hashCode(), list);
+            }
+            else
+                list.add(wordInfo);
         }
         return bookHash;
+    }
+    private Collection<WordInfo> sort()
+    {
+        List<WordInfo> sortedWordRepetitions = new ArrayList<>(bookHash.values());
+        Collections.sort(sortedWordRepetitions,new ValueComparor());
+        return sortedWordRepetitions;
     }
     public int countUniqeWords()
     {
@@ -48,8 +60,8 @@ public class BookSearch {
         while (iterator.hasNext())
         {
             Map.Entry pair = (Map.Entry)iterator.next();
-            LinkedList<String> list = (LinkedList<String>)pair.getValue();
-            count += list.size();
+            WordInfo word = (WordInfo)pair.getValue();
+            count += word.getCount();
 
         }
         return count;
@@ -60,25 +72,69 @@ public class BookSearch {
     }
     public int count(String word)
     {
-        LinkedList<String> list = bookHash.get(word.hashCode());
-        if (list == null) return 0;
-        return list.size();
+        WordInfo wordApp = bookHash.get(word.hashCode());
+        if (wordApp == null) return 0;
+        return wordApp.getCount();
     }
-    public void printWordDuplications(int duplicationCount)
+    public void printWordRepetitions(int repetitionsCount)
+    {
+
+        for (WordInfo word :sort())
+        {
+            if (word.getCount()>=repetitionsCount)
+                System.out.println("The word: (" + word.getValue() + ") appears " + word.getCount() + " times");
+        }
+    }
+    public int removeUpperCase()
     {
         Iterator iterator =  bookHash.entrySet().iterator();
-        Collection<LinkedList<String>> values =  bookHash.values();
-        Collections.sort(values,);
-        HashSet<Integer,String>
+        int countRemoved = 0;
+        ArrayList<Integer> keysToRemove = new ArrayList<>();
         while (iterator.hasNext())
         {
             Map.Entry pair = (Map.Entry)iterator.next();
-            LinkedList<String> list = (LinkedList<String>)pair.getValue();
-            if (list.size()>0)
-                System.out.println(list.getFirst());
+            WordInfo word = (WordInfo)pair.getValue();
+            String value = word.getValue();
+            if (isAllUpperCase(value))
+            {
+                keysToRemove.add((int)pair.getKey());
+                countRemoved+= word.getCount();
+            }
+
 
         }
+        for (Integer key:keysToRemove)
+        {
+            WordInfo word = bookHash.get(key);
+            System.out.println("Removed: " + word.getValue() + " " + word.getCount() + " times");
+
+             bookHash.remove(key);
+        }
+        return countRemoved;
+    }
+    public static boolean isAllUpperCase(String str){
+        for(int i=0; i<str.length(); i++){
+            char c = str.charAt(i);
+            if(c<65 || c>90) {
+                return false;
+            }
+        }
+        //str.charAt(index)
+        return true;
     }
 
-
 }
+class ValueComparor implements Comparator
+{
+   @Override
+    public int compare(Object o1, Object o2) {
+
+        WordInfo w1 = (WordInfo)o1;
+        WordInfo w2 = (WordInfo)o2;
+        return w1.compareTo(w2);
+    }
+}
+
+
+
+

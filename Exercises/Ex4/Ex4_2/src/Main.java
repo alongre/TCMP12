@@ -13,8 +13,11 @@ public class Main {
             //2
             printBookContainsWord(bookSearch);
             //3
-            printNumWordAppears(bookSearch);
-
+            printWordAppearance(bookSearch);
+            //4
+            printWordsRepititions(bookSearch);
+            //5
+            removeUpperCase(bookSearch);
 
 
 
@@ -27,6 +30,14 @@ public class Main {
         }
     }
 
+    private static void printWordAppearance(BookSearch bookSearch) {
+        System.out.println("Type a word to check the number of time it appears in the book:");
+        Scanner in = new Scanner(System.in);
+        String word = in.nextLine();
+        System.out.println("The word: " + word + " appears " + bookSearch.count(word) + " times");
+        System.out.println("*****************************");
+    }
+
     private static void printBookContainsWord(BookSearch bookSearch)
     {
         System.out.println("Type a word to check if it appears:");
@@ -37,13 +48,21 @@ public class Main {
             System.out.println("The word " + word + " does appear");
         else
             System.out.println("The word " + word + " does not appear");
+        System.out.println("*****************************");
     }
 
-    private static void printNumWordAppears(BookSearch bookSearch)
+    private static void
+            printWordsRepititions(BookSearch bookSearch)
     {
-        System.out.println("Type a word to check the number of time it appears in the book:");
-        Scanner in = new Scanner(System.in);
-        String word = in.nextLine();
-        System.out.println("The word: " + word + " appears " + bookSearch.count(word) + " times");
+        System.out.println("the following words appears 5 times or more:");
+        bookSearch.printWordRepetitions(5);
+        System.out.println("*****************************");
+    }
+
+    private static void removeUpperCase(BookSearch bookSearch)
+    {
+        System.out.println("Removing upper case:");
+        System.out.println("Removed " + bookSearch.removeUpperCase() + " words");
+        System.out.println("*****************************");
     }
 }
