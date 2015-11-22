@@ -1,3 +1,5 @@
+import sun.awt.image.ImageWatched;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
@@ -43,9 +45,9 @@ public class BookSearch {
         }
         return bookHash;
     }
-    private Collection<WordInfo> sort()
+    private List<LinkedList<WordInfo>>  sort()
     {
-        List<WordInfo> sortedWordRepetitions = new ArrayList<>(bookHash.values());
+        List<LinkedList<WordInfo>> sortedWordRepetitions = new ArrayList<>(bookHash.values());
         Collections.sort(sortedWordRepetitions,new ValueComparor());
         return sortedWordRepetitions;
     }
@@ -53,36 +55,24 @@ public class BookSearch {
     {
         return bookHash.size();
     }
-    public int countTotalWords()
-    {
-        Iterator iterator =  bookHash.entrySet().iterator();
-        int count=0;
-        while (iterator.hasNext())
-        {
-            Map.Entry pair = (Map.Entry)iterator.next();
-            WordInfo word = (WordInfo)pair.getValue();
-            count += word.getCount();
 
-        }
-        return count;
-    }
     public boolean contains(String word)
     {
         return bookHash.containsKey(word.hashCode());
     }
     public int count(String word)
     {
-        WordInfo wordApp = bookHash.get(word.hashCode());
-        if (wordApp == null) return 0;
-        return wordApp.getCount();
+        LinkedList<WordInfo> wordList = bookHash.get(word.hashCode());
+        if (wordList == null) return 0;
+        return wordList.size();
     }
     public void printWordRepetitions(int repetitionsCount)
     {
 
-        for (WordInfo word :sort())
+        for (LinkedList<WordInfo> wordList :sort())
         {
-            if (word.getCount()>=repetitionsCount)
-                System.out.println("The word: (" + word.getValue() + ") appears " + word.getCount() + " times");
+            if (wordList.size() >= repetitionsCount)
+                System.out.println("The word: (" + wordList.getFirst().getValue() + ") appears " + wordList.size() + " times");
         }
     }
     public int removeUpperCase()
@@ -93,20 +83,24 @@ public class BookSearch {
         while (iterator.hasNext())
         {
             Map.Entry pair = (Map.Entry)iterator.next();
-            WordInfo word = (WordInfo)pair.getValue();
-            String value = word.getValue();
+            LinkedList<WordInfo> wordList = (LinkedList<WordInfo>)pair.getValue();
+            String value = wordList.getFirst().getValue();
             if (isAllUpperCase(value))
             {
                 keysToRemove.add((int)pair.getKey());
-                countRemoved+= word.getCount();
+                countRemoved+= wordList.size();
             }
 
 
         }
         for (Integer key:keysToRemove)
         {
-            WordInfo word = bookHash.get(key);
-            System.out.println("Removed: " + word.getValue() + " " + word.getCount() + " times");
+
+            LinkedList<WordInfo> wordList = bookHash.get(key);
+            String word = wordList.getFirst().getValue();
+            Integer count = wordList.size();
+            wordList.clear();
+            System.out.println("Removed: " + word + " " + count + " times");
 
              bookHash.remove(key);
         }
@@ -119,7 +113,6 @@ public class BookSearch {
                 return false;
             }
         }
-        //str.charAt(index)
         return true;
     }
 
@@ -129,9 +122,11 @@ class ValueComparor implements Comparator
    @Override
     public int compare(Object o1, Object o2) {
 
-        WordInfo w1 = (WordInfo)o1;
-        WordInfo w2 = (WordInfo)o2;
-        return w1.compareTo(w2);
+        LinkedList<WordInfo> w1 = (LinkedList<WordInfo>) o1;
+        LinkedList<WordInfo> w2 = (LinkedList<WordInfo>)o2;
+       if (w1.size() == w2.size()) return 0;
+       if (w1.size()> w2.size()) return 1;
+       else return -1;
     }
 }
 
