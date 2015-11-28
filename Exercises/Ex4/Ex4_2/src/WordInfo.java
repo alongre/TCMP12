@@ -13,12 +13,12 @@ public class WordInfo implements Comparable {
 
     private String value;
 
-    public int getCount() {
-        return count;
+    public int getPage() {
+        return page;
     }
 
-    public void setCount(int count) {
-        this.count = count;
+    public void setPage(int page) {
+        this.page = page;
     }
 
     private int count;
@@ -45,11 +45,8 @@ public class WordInfo implements Comparable {
     @Override
     public int compareTo(Object o) {
         WordInfo w2 = (WordInfo)o;
-        if (this.getCount() == w2.getCount()) return 0;
-        if (this.getCount()>w2.getCount())
-            return 1;
-        else
-            return -1;
+        return this.getValue().compareTo(w2.getValue());
+
     }
 }
 

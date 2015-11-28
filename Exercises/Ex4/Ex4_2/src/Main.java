@@ -18,11 +18,8 @@ public class Main {
             printWordsRepititions(bookSearch);
             //5
             removeUpperCase(bookSearch);
-
-
-
-
-        //    System.out.println("Total words: " + bookSearch.countTotalWords());
+            //7
+            bookSearch.printWords();
         }
         catch (FileNotFoundException e)
         {
